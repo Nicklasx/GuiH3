@@ -15,10 +15,10 @@
             <Image x:Name="blåTryk" Opacity="0" MouseLeftButtonDown="BlåTryk_MouseLeftButtonDown" MouseLeftButtonUp="BlåTryk_MouseLeftButtonUp" MouseLeave="BlåTryk_MouseLeave" Source="billeder/bløTryk.jpg" Canvas.Left="453" Canvas.Top="368" Width="113"/>
             <Image x:Name="orangeTryk" Opacity="0" MouseDown="OrangeTryk_MouseDown" MouseLeftButtonUp="OrangeTryk_MouseLeftButtonUp" MouseLeave="OrangeTryk_MouseLeave" Source="billeder/orangeTryk.jpg" Canvas.Left="571" Canvas.Top="375" Width="109"/>
             <Image x:Name="grønNode" Opacity="0"  Source="billeder/grønNode.jpg" Canvas.Left="284" Canvas.Top="10"/>
-            <Image x:Name="rødNode" Opacity="1"  Source="billeder/rødNode.jpg" Canvas.Left="325" Canvas.Top="10" Height="18" Width="36"/>
-            <Image x:Name="gulNode" Opacity="1"  Source="billeder/gulNode.jpg" Canvas.Left="378" Canvas.Top="10" Height="18" Width="36"/>
-            <Image x:Name="blåNode" Opacity="1"  Source="billeder/blåNode.jpg" Canvas.Left="428" Canvas.Top="10" Height="18" Width="36" />
-            <Image x:Name="orangeNode" Opacity="1"  Source="billeder/orangeNode.jpg" Canvas.Left="469" Canvas.Top="10" Height="18" Width="36"/>
+            <Image x:Name="rødNode" Opacity="0"  Source="billeder/rødNode.jpg" Canvas.Left="325" Canvas.Top="10" Height="18" Width="36"/>
+            <Image x:Name="gulNode" Opacity="0"  Source="billeder/gulNode.jpg" Canvas.Left="378" Canvas.Top="10" Height="18" Width="36"/>
+            <Image x:Name="blåNode" Opacity="0"  Source="billeder/blåNode.jpg" Canvas.Left="428" Canvas.Top="10" Height="18" Width="36" />
+            <Image x:Name="orangeNode" Opacity="0"  Source="billeder/orangeNode.jpg" Canvas.Left="469" Canvas.Top="10" Height="18" Width="36"/>
             <Button Click="Button_Click" Content="Button" Width="75" Canvas.Left="10" Canvas.Top="100"/>
             <TextBox x:Name="test" Height="88" TextWrapping="Wrap" Text="TextBox" Width="85" Canvas.Top="154" Canvas.Left="10"/>
             <TextBox x:Name="test1" Height="106" TextWrapping="Wrap" Text="TextBox" Width="85" Canvas.Top="247" Canvas.Left="10"/>

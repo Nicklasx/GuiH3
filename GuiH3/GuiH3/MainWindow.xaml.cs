@@ -88,22 +88,22 @@ namespace GuiH3
         {
             orangeTryk.Opacity = 0;
         }
-        float x = 284;
-        float y = 10;
+        float grønX = 284;
+        float grønY = 10;
         float heigt = 18;
         float width = 36;
         private void MoveGrøn()
         {
             grønNode.Opacity = 1;
-            if (x > 115)
+            if (grønX > 115)
             {
-                Canvas.SetLeft(grønNode, x);
-                x = x - 5;
+                Canvas.SetLeft(grønNode, grønX);
+                grønX = grønX - 5;
             }
-            if (y < 380)
+            if (grønY < 380)
             {
-                Canvas.SetTop(grønNode, y);
-                y = y + 10;
+                Canvas.SetTop(grønNode, grønY);
+                grønY = grønY + 10;
             }
             if (heigt < 38)
             {
@@ -113,17 +113,114 @@ namespace GuiH3
             {
                 grønNode.Width = width += 2.59f;
             }
-            test.Text = "x " + Convert.ToString(x) + "y " + Convert.ToString(y);
+        }
+        float rødX = 325;
+        float rødY = 10;
+        private void MoveRød()
+        {
+            rødNode.Opacity = 1;
+            if (rødX > 225)
+            {
+                Canvas.SetLeft(rødNode, rødX);
+                rødX = rødX - 5;
+            }
+            if (rødY < 380)
+            {
+                Canvas.SetTop(rødNode, rødY);
+                rødY = rødY + 10;
+            }
+            if (heigt < 38)
+            {
+                rødNode.Height = heigt += 1.02f;
+            }
+            if (width < 96)
+            {
+                rødNode.Width = width += 2.59f;
+            }
+        }
+        float gulX = 378;
+        float gulY = 10;
+        private void MoveGul()
+        {
+            gulNode.Opacity = 1;
+            if (gulX > 350)
+            {
+                Canvas.SetLeft(gulNode, gulX);
+                gulX = gulX - 5;
+            }
+            if (gulY < 380)
+            {
+                Canvas.SetTop(gulNode, gulY);
+                gulY = gulY + 10;
+            }
+            if (heigt < 38)
+            {
+                gulNode.Height = heigt += 1.02f;
+            }
+            if (width < 96)
+            {
+                gulNode.Width = width += 2.59f;
+            }
+        }
+        float blåX = 428;
+        float blåY = 10;
+        private void MoveBlå()
+        {
+            blåNode.Opacity = 1;
+            if (blåX < 450)
+            {
+                Canvas.SetLeft(blåNode, blåX);
+                blåX = blåX + 5;
+            }
+            if (blåY < 380)
+            {
+                Canvas.SetTop(blåNode, blåY);
+                blåY = blåY + 10;
+            }
+            if (heigt < 38)
+            {
+                blåNode.Height = heigt += 1.02f;
+            }
+            if (width < 96)
+            {
+                blåNode.Width = width += 2.59f;
+            }
+        }
+        float orangeX = 469;
+        float orangeY = 10;
+        private void MoveOrange()
+        {
+            orangeNode.Opacity = 1;
+            if (orangeX < 575)
+            {
+                Canvas.SetLeft(orangeNode, orangeX);
+                orangeX = orangeX + 5;
+            }
+            if (orangeY < 380)
+            {
+                Canvas.SetTop(orangeNode, orangeY);
+                orangeY = orangeY + 10;
+            }
+            if (heigt < 38)
+            {
+                orangeNode.Height = heigt += 1.02f;
+            }
+            if (width < 96)
+            {
+                orangeNode.Width = width += 2.59f;
+            }
+            test.Text = "x " + Convert.ToString(orangeX) + "y " + Convert.ToString(orangeY);
             test1.Text = "h " + Convert.ToString(heigt) + "b " + Convert.ToString(width);
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < 37; i++)
-            {
-                MoveGrøn();
-            }
-            Thread.Sleep(1);
+            Thread.Sleep(100);
+
+            MoveGrøn();
+            MoveRød();
+            MoveGul();
+            MoveBlå();
+            MoveOrange();
         }
     }
 }
