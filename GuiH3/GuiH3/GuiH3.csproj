@@ -98,9 +98,6 @@
     <Resource Include="billeder\background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="billeder\background1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="billeder\bløTryk.JPG" />
   </ItemGroup>
   <ItemGroup>
@@ -117,9 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="billeder\gulTryk.JPG" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="billeder\nodes.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="billeder\orangeNode.JPG" />

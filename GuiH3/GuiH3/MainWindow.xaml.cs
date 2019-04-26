@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
+using System.Windows.Threading;
 
 namespace GuiH3
 {
@@ -85,6 +87,22 @@ namespace GuiH3
         private void OrangeTryk_MouseLeave(object sender, MouseEventArgs e)
         {
             orangeTryk.Opacity = 0;
+        }
+
+        float x = 284;
+        float y = 10;
+        private void MoveGrøn()
+        {
+                grønNode.Opacity = 1;
+                Canvas.SetLeft(grønNode, x);
+                Canvas.SetTop(grønNode, y);
+                x = x - 4;
+                y = y + 10;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+                MoveGrøn();
         }
     }
 }
