@@ -1,0 +1,21 @@
+﻿<Window x:Class="ElAnlæg.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElAnlæg"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.499,0.889">
+        <Canvas HorizontalAlignment="Left" Height="350" VerticalAlignment="Top" Width="500">
+            <Image Height="350" Width="500" Source="el/slukket.jpg"/>
+
+            <Image x:Name="S6" Opacity="0" Height="46" Width="29" Canvas.Left="270" Canvas.Top="207" Source="el/tændS6.jpg" MouseDown="S6_MouseDown"/>
+
+            <Image Source="el/tændS4.jpg" x:Name="S4" Opacity="0" Height="46" Width="29" Canvas.Left="205" Canvas.Top="207" MouseDown="S4_MouseDown"/>
+            
+            <Image Source="el/drejAc.jpg" x:Name="AC" Opacity="0" Height="46" Width="29" Canvas.Left="335" Canvas.Top="207" MouseDown="AC_MouseDown"/>
+        </Canvas>
+
+    </Grid>
+</Window>
