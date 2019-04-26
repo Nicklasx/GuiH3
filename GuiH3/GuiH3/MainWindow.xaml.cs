@@ -88,21 +88,44 @@ namespace GuiH3
         {
             orangeTryk.Opacity = 0;
         }
-
         float x = 284;
         float y = 10;
+        float heigt = 18;
+        float width = 36;
         private void MoveGrøn()
         {
-                grønNode.Opacity = 1;
+            grønNode.Opacity = 1;
+            if (x > 115)
+            {
                 Canvas.SetLeft(grønNode, x);
+                x = x - 5;
+            }
+            if (y < 380)
+            {
                 Canvas.SetTop(grønNode, y);
-                x = x - 4;
                 y = y + 10;
+            }
+            if (heigt < 38)
+            {
+                grønNode.Height = heigt += 1.02f;
+            }
+            if (width < 96)
+            {
+                grønNode.Width = width += 2.59f;
+            }
+            test.Text = "x " + Convert.ToString(x) + "y " + Convert.ToString(y);
+            test1.Text = "h " + Convert.ToString(heigt) + "b " + Convert.ToString(width);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            for (int i = 0; i < 37; i++)
+            {
                 MoveGrøn();
+            }
+            Thread.Sleep(1);
         }
     }
 }
+
+ //Height="38" Width="96"

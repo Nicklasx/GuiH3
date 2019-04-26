@@ -20,6 +20,8 @@
             <Image x:Name="blåNode" Opacity="1"  Source="billeder/blåNode.jpg" Canvas.Left="428" Canvas.Top="10" Height="18" Width="36" />
             <Image x:Name="orangeNode" Opacity="1"  Source="billeder/orangeNode.jpg" Canvas.Left="469" Canvas.Top="10" Height="18" Width="36"/>
             <Button Click="Button_Click" Content="Button" Width="75" Canvas.Left="10" Canvas.Top="100"/>
+            <TextBox x:Name="test" Height="88" TextWrapping="Wrap" Text="TextBox" Width="85" Canvas.Top="154" Canvas.Left="10"/>
+            <TextBox x:Name="test1" Height="106" TextWrapping="Wrap" Text="TextBox" Width="85" Canvas.Top="247" Canvas.Left="10"/>
         </Canvas>
     </Grid>
 </Window>
