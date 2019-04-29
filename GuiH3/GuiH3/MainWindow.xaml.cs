@@ -214,13 +214,12 @@ namespace GuiH3
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Thread.Sleep(100);
-
             MoveGrøn();
-            MoveRød();
-            MoveGul();
-            MoveBlå();
-            MoveOrange();
+            //MoveGrøn();
+            //MoveRød();
+            //MoveGul();
+            //MoveBlå();
+            //MoveOrange();
         }
     }
 }

@@ -60,5 +60,41 @@ namespace ElAnlæg
                 AC.Opacity = 0;
             }
         }
+
+        private void småOp_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (småOp.Opacity == 0)
+            {
+                småOp.Opacity = 1;
+            }
+            else if (småOp.Opacity == 1)
+            {
+                småOp.Opacity = 0;
+            }
+        }
+
+        private void storOp_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (storOp.Opacity == 0)
+            {
+                storOp.Opacity = 1;
+            }
+            else if (storOp.Opacity == 1)
+            {
+                storOp.Opacity = 0;
+            }
+        }
+
+        private void småOp1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (småOp1.Opacity == 0)
+            {
+                småOp1.Opacity = 1;
+            }
+            else if (småOp1.Opacity == 1)
+            {
+                småOp1.Opacity = 0;
+            }
+        }
     }
 }

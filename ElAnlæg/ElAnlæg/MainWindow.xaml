@@ -13,8 +13,14 @@
             <Image x:Name="S6" Opacity="0" Height="46" Width="29" Canvas.Left="270" Canvas.Top="207" Source="el/tændS6.jpg" MouseDown="S6_MouseDown"/>
 
             <Image Source="el/tændS4.jpg" x:Name="S4" Opacity="0" Height="46" Width="29" Canvas.Left="205" Canvas.Top="207" MouseDown="S4_MouseDown"/>
-            
+
             <Image Source="el/drejAc.jpg" x:Name="AC" Opacity="0" Height="46" Width="29" Canvas.Left="335" Canvas.Top="207" MouseDown="AC_MouseDown"/>
+
+            <Image Source="el/opSmå.jpg" x:Name="småOp" Opacity="0" Height="39" Width="29" Canvas.Left="246" Canvas.Top="155" MouseDown="småOp_MouseDown"/>
+
+            <Image Source="el/opLille.jpg" x:Name="storOp" Opacity="0" Height="53" Width="59" Canvas.Left="182" Canvas.Top="149" MouseDown="storOp_MouseDown"/>
+
+            <Image Source="el/opSmå.jpg" x:Name="småOp1" Opacity="0" Height="39" Width="29" Canvas.Left="280" Canvas.Top="155" MouseDown="småOp1_MouseDown"/>
         </Canvas>
 
     </Grid>
