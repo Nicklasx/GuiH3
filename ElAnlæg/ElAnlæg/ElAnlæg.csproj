@@ -98,12 +98,6 @@
     <Resource Include="el\slukket.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="el\tændS4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="el\tændS6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="el\drejAc.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +105,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="el\opSmå.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="el\drejStor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="el\grønTænd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="el\blåTænd.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

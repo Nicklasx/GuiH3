@@ -96,5 +96,41 @@ namespace ElAnlæg
                 småOp1.Opacity = 0;
             }
         }
+
+        private void S5_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (S5.Opacity == 0)
+            {
+                S5.Opacity = 1;
+            }
+            else if (S5.Opacity == 1)
+            {
+                S5.Opacity = 0;
+            }
+        }
+
+        private void S1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (S1.Opacity == 0)
+            {
+                S1.Opacity = 1;
+            }
+            else if (S1.Opacity == 1)
+            {
+                S1.Opacity = 0;
+            }
+        }
+
+        private void S3_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (S3.Opacity == 0)
+            {
+                S3.Opacity = 1;
+            }
+            else if (S3.Opacity == 1)
+            {
+                S3.Opacity = 0;
+            }
+        }
     }
 }

@@ -10,9 +10,12 @@
         <Canvas HorizontalAlignment="Left" Height="350" VerticalAlignment="Top" Width="500">
             <Image Height="350" Width="500" Source="el/slukket.jpg"/>
 
-            <Image x:Name="S6" Opacity="0" Height="46" Width="29" Canvas.Left="270" Canvas.Top="207" Source="el/tændS6.jpg" MouseDown="S6_MouseDown"/>
+            <Image x:Name="S6" Opacity="0" Height="46" Width="29" Source="el/blåTænd.jpg" MouseDown="S6_MouseDown" Canvas.Left="270" Canvas.Top="216"/>
+            <Image x:Name="S1" Opacity="0" Height="46" Width="29" Source="el/blåTænd.jpg" MouseDown="S1_MouseDown" Canvas.Left="106" Canvas.Top="216"/>
+            <Image x:Name="S3" Opacity="0" Height="46" Width="29" Source="el/blåTænd.jpg" MouseDown="S3_MouseDown" Canvas.Left="171" Canvas.Top="216"/>
 
-            <Image Source="el/tændS4.jpg" x:Name="S4" Opacity="0" Height="46" Width="29" Canvas.Left="205" Canvas.Top="207" MouseDown="S4_MouseDown"/>
+            <Image Source="el/grønTænd.jpg" x:Name="S4" Opacity="0" Height="46" Width="30"  MouseDown="S4_MouseDown" Canvas.Left="205" Canvas.Top="216"/>
+            <Image Source="el/grønTænd.jpg" x:Name="S5" Opacity="0" Height="46" Width="29" Canvas.Left="241" Canvas.Top="216" MouseDown="S5_MouseDown"/>
 
             <Image Source="el/drejAc.jpg" x:Name="AC" Opacity="0" Height="46" Width="29" Canvas.Left="335" Canvas.Top="207" MouseDown="AC_MouseDown"/>
 
