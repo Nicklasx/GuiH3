@@ -215,11 +215,10 @@ namespace GuiH3
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MoveGrøn();
-            //MoveGrøn();
-            //MoveRød();
-            //MoveGul();
-            //MoveBlå();
-            //MoveOrange();
+            MoveRød();
+            MoveGul();
+            MoveBlå();
+            MoveOrange();
         }
     }
 }
