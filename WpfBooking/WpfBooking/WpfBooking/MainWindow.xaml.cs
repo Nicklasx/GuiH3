@@ -20,11 +20,25 @@ namespace WpfBooking
     /// </summary>
     public partial class MainWindow : Window
     {
+        ServiceReference1.Service1Client sc = new ServiceReference1.Service1Client();
+        int[] bookings = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        ServiceReference1.BookingItem[] bookingsArry = new ServiceReference1.BookingItem[12];
+        int id = 4567;
         public MainWindow()
         {
             InitializeComponent();
+
+            sc.CreateBookingNumber(id, bookingsArry.Length);
+            bookingsArry = sc.GetBookingItems(id);
+            for (int i = 0; i < bookingsArry.Length; i++)
+            {
+                if (bookingsArry[i].State == 1)
+                {
+                    Image img = (Image)this.FindName("image" + (i + 1));
+                    changeTilstandAndImage(i, img);
+                }
+            }
         }
-        int[] bookings = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         private void Image1_MouseDown(object sender, MouseButtonEventArgs e)
         {
             int pos = 0;
@@ -109,17 +123,23 @@ namespace WpfBooking
             changeTilstandAndImage(pos, img);
         }
         private void changeTilstandAndImage(int pos, Image img)
-        {            
+        {
+            ServiceReference1.BookingItem item = new ServiceReference1.BookingItem();
+
             if (bookings[pos] == 0)
             {
                 img.Source = new BitmapImage(new Uri(@"images/SeatClose.png", UriKind.RelativeOrAbsolute));
                 bookings[pos] = 1;
+                item.State = 1;
             }
             else if (bookings[pos] == 1)
             {
                 img.Source = new BitmapImage(new Uri(@"images/SeatOpen.png", UriKind.RelativeOrAbsolute));
                 bookings[pos] = 0;
+                item.State = 0;
             }
+            bookingsArry[pos] = item;
+            sc.SetBookingItems(id, bookingsArry);
         }
     }
 }
